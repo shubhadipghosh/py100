@@ -1,0 +1,16 @@
+vowels = ['a', 'e', 'i', 'o', 'u']
+wordOne = "cauliflower"
+wordTwo = "programming"
+
+
+def countConsonants(word: str, vowels: list = vowels):
+    count = 0
+    for c in word:
+        if c not in vowels:
+            count += 1
+    return word + " contains " + str(count) + " consonants"
+
+
+print(countConsonants(wordOne))
+
+print(countConsonants(wordTwo))
